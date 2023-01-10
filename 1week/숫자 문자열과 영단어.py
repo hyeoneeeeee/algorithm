@@ -12,9 +12,8 @@ def solution(s):
         "zero":"0"
     }
     for key,vel in dic.items():
-        print(key,vel)
-        s.replace(key,vel)
-        print(str(s))
-    return str(s)
+        s = s.replace(key,vel)
+        print(s)
+    return s
 
 solution("2three45sixseven")
