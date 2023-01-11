@@ -13,7 +13,6 @@ def solution(s):
     }
     for key,vel in dic.items():
         s = s.replace(key,vel)
-        print(s)
-    return s
+    return int(s)
 
 solution("2three45sixseven")
