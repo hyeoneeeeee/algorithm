@@ -1,17 +1,11 @@
 
-# N, M = int(input().split(" "))
-# A = []
-# for i in range(N):
-#     A.append(0)
-# for i in range(M):
-#     i = list(map(int, input().split(" ")))
-#     for x in
-
-
-N, M = int(input().split(" "))
-A = []
+#  출력 초과 = print를 지우지 않고 제출
+N, M = map(int, (input().split(" ")))
+A = ["0" for _ in range(N)]
 B = []
-for i in range(N):
-    A.append(0)
-for i in range(M):
-    i = list(map(int, input().split(" ")))
+for x in range(M):
+    a, b, c = map(int, input().split(" "))
+    for y in range(a-1,b):
+        A[y] = str(c)
+print(" ".join(A))
+
