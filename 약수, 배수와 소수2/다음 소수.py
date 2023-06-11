@@ -1,4 +1,18 @@
-for _ in range(int(input)):
-    n = int(input())
-    for i in range(1,n//2+1):
-        if 
+import sys
+def is_prism(num):
+    for i in range(2, int(num**0.5)+1):
+        if num%i == 0:
+            return False
+    return True
+
+for _ in range(int(sys.stdin.readline().strip())):
+    n = int(sys.stdin.readline().strip())
+    if n == 0 or n == 1:
+        print(2)
+        continue
+    while True:
+        if is_prism(n):
+            print(n)
+            break
+        else:
+            n += 1
