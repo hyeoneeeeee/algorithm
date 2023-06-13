@@ -1,5 +1,5 @@
 import sys
-def is_prism(num):
+def is_prime(num):
     for i in range(2, int(num**0.5)+1):
         if num%i == 0:
             return False
@@ -11,7 +11,7 @@ for _ in range(int(sys.stdin.readline().strip())):
         print(2)
         continue
     while True:
-        if is_prism(n):
+        if is_prime(n):
             print(n)
             break
         else:
